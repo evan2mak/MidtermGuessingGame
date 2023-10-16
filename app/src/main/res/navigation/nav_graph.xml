@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <!-- MainFragment -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="evtomak.iu.edu.midtermguessinggame.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <!-- Action to navigate to GameFragment -->
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <!-- Action to navigate to HighScoreFragment -->
+        <action
+            android:id="@+id/action_mainFragment_to_highScoreFragment"
+            app:destination="@id/highScoreFragment" />
+    </fragment>
+
+    <!-- GameFragment -->
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="evtomak.iu.edu.midtermguessinggame.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <!-- Action to navigate back to MainFragment -->
+        <action
+            android:id="@+id/action_gameFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <!-- HighScoreFragment -->
+    <fragment
+        android:id="@+id/highScoreFragment"
+        android:name="evtomak.iu.edu.midtermguessinggame.HighScoreFragment"
+        android:label="HighScoreFragment"
+        tools:layout="@layout/fragment_high_score">
+        <!-- Action to navigate back to MainFragment -->
+        <action
+            android:id="@+id/action_highScoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+</navigation>

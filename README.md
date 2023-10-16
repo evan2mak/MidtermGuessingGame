@@ -206,11 +206,7 @@ Data Access Object (DAO) for the Score entity.
 
 Here's a walkthrough of implemented user stories:
 
-
-
-
-
-
+![studio64_UfXIYMLW1Q](https://github.com/evan2mak/MidtermGuessingGame/assets/128643914/345b8920-50b0-4e3c-8e4a-031a03893fa8)
 
 ## Notes
 
